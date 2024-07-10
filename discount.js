@@ -20,16 +20,16 @@ function calculate(ticketQunatity) {
         return ticketPrice;
     }
     else if (ticketQunatity <= 200) {
-        const moreThen100 = ticketQunatity - 100; 
         const first100Price = 100 * first100;
+        const moreThen100 = ticketQunatity - 100; 
         const secound100Price = moreThen100* secound100;
         const totalPrice = first100Price + secound100Price;
         return totalPrice;
     }
     else {
-        const moreThen200 = ticketQunatity - 200; 
         const first100Price = 100 * first100;
         const secound100Price = 100 * secound100;
+        const moreThen200 = ticketQunatity - 200; 
         const third100Price = moreThen200 * third100;
         const totalPrice = first100Price + secound100Price + third100Price ;
         return totalPrice;
