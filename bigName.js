@@ -1,13 +1,28 @@
 const names = ['laila', 'maila', 'ela', 'khadija', 'abdhullah', 'sajib', 'maya']
 
-let bigNameCharacters = 0;
-let bigName;
-for (let i = 0; i < names.length; i++) {
-    const name = names[i];
-    const characters = name.length;
-    if (characters > bigNameCharacters) {
-        bigNameCharacters = characters;
-        bigName = name;
-    }    
+// let bigNameCharacters = 0;
+// let bigName;
+// for (let i = 0; i < names.length; i++) {
+//     const name = names[i];
+//     const characters = name.length;
+//     if (characters > bigNameCharacters) {
+//         bigNameCharacters = characters;
+//         bigName = name;
+//     }    
+// }
+// console.log(bigName);
+
+function filter(names) {
+    let bigNameCharacters = 0;
+    let bigName;
+    for (let i = 0; i < names.length; i++) {
+        const name = names[i];
+        const characters = name.length;
+        if (characters > bigNameCharacters) {
+            bigNameCharacters = characters;
+            bigName = name;
+        }
+    }
+    return bigName;
 }
-console.log(bigName);
+console.log(filter(names));
