@@ -26,3 +26,4 @@ function filter(names) {
     return bigName;
 }
 console.log(filter(names));
+
